@@ -23,5 +23,8 @@
 - (IBAction)okClicked:(id)sender;
 - (IBAction)dateClicked:(id)sender;
 - (IBAction)contactsClicked:(id)sender;
+- (IBAction)callClicked:(id)sender;
+- (IBAction)emailClicked:(id)sender;
+- (IBAction)smsClicked:(id)sender;
 
 @end
