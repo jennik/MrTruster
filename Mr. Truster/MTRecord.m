@@ -10,8 +10,16 @@
 
 @implementation MTRecord
 
-@synthesize dateBack, dateCreated, debtorPhoto, itemPhoto;
+@synthesize dateBack, dateCreated, debitorPhoto, itemPhoto, comment, contact;
 
-
+- (id)initWithDateBack:(NSDate *)backDate debitorPhoto:(UIImage *)debPhoto itemPhoto:(UIImage *)anItemPhoto comment:(NSString *)comment contact:(ABRecordRef)aContact {
+    self.dateBack = backDate;
+    self.debitorPhoto = debPhoto;
+    self.itemPhoto = anItemPhoto;
+    self.contact = aContact;
+    self.dateCreated = [NSDate date];
+    
+    return nil;
+}
 
 @end

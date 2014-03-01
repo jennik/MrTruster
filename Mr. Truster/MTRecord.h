@@ -7,15 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AddressBookUI/AddressBookUI.h>
 
 @interface MTRecord : NSObject
 
 @property (nonatomic) NSDate *dateCreated;
 @property (nonatomic) NSDate *dateBack;
-@property (nonatomic) UIView *debtorPhoto;
-@property (nonatomic) UIView *itemPhoto;
+@property (nonatomic) UIImage *debitorPhoto;
+@property (nonatomic) UIImage *itemPhoto;
+@property (nonatomic) NSString *comment;
+@property (nonatomic) ABRecordRef contact;
 
-- (id)initWithDateBack:(NSDate *)backDate debitorPhoto:(UIImage *) debPhoto andItemPhoto:(UIImage *)itemPhoto;
+- (id)initWithDateBack:(NSDate *)backDate debitorPhoto:(UIImage *)debPhoto itemPhoto:(UIImage *)itemPhoto comment:(NSString *)comment contact:(ABRecordRef)contact;
 
 
 @end
