@@ -7,6 +7,7 @@
 //
 
 #import "MTMainViewController.h"
+#import "MTRecord.h"
 
 @interface MTMainViewController ()
 
@@ -20,7 +21,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -42,6 +42,11 @@
     return [self.records count];
 }
 
-- 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    
+    return cell;
+}
 
 @end
