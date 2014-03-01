@@ -12,11 +12,12 @@
 
 @synthesize dateBack, dateCreated, debitorPhoto, itemPhoto, comment, contact;
 
-- (id)initWithDateBack:(NSDate *)backDate debitorPhoto:(UIImage *)debPhoto itemPhoto:(UIImage *)anItemPhoto comment:(NSString *)comment contact:(ABRecordRef)aContact {
+- (id)initWithDateBack:(NSDate *)backDate debitorPhoto:(UIImage *)debPhoto itemPhoto:(UIImage *)anItemPhoto comment:(NSString *)aComment contact:(ABRecordRef)aContact {
     self.dateBack = backDate;
     self.debitorPhoto = debPhoto;
     self.itemPhoto = anItemPhoto;
     self.contact = aContact;
+    self.comment = aComment;
     self.dateCreated = [NSDate date];
     
     return self;

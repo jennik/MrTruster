@@ -28,7 +28,30 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"%@", self.record.comment);
 	// Do any additional setup after loading the view.
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"MM dd"];
+    
+    self.createDateField.text = [formatter stringFromDate:self.record.dateCreated];
+    self.itemPhotoField.image = record.itemPhoto;
+    
+    if (self.record.debitorPhoto) {
+        self.debitorPhotoField.image = self.record.debitorPhoto;
+    }
+    
+    if (self.record.contact) {
+        self.contactField.text = @"TEXT";
+    }
+    
+    if (self.record.dateBack) {
+        self.dateBackField.text = [formatter stringFromDate:self.record.dateBack];
+    }
+    
+    if (self.record.comment) {
+        self.commentField.text = self.record.comment;
+    }
 }
 
 - (void)didReceiveMemoryWarning

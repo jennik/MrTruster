@@ -49,7 +49,7 @@
         MTRecord *item5 = [[MTRecord alloc] initWithDateBack:date debitorPhoto:deb_img5 itemPhoto:item_img5 comment:@"Plz giv ma stuff" contact:ref];
         
         records = [NSMutableArray arrayWithObjects:item1, item2, item3, item4, item5, nil];
-        
+        NSLog(@"%@", item1.comment);
     }
     return self;
 }
