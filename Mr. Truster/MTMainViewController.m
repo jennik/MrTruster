@@ -8,6 +8,7 @@
 
 #import "MTMainViewController.h"
 #import "MTRecord.h"
+#import "MTCell.h"
 
 @interface MTMainViewController ()
 
@@ -44,7 +45,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    MTCell *cell = [[MTCell alloc] init];
     
     return cell;
 }
