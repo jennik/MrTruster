@@ -80,8 +80,45 @@
 }
 
 - (IBAction)emailClicked:(id)sender {
+    if([MFMailComposeViewController canSendMail]) {
+        ABMultiValueRef emails = ABRecordCopyValue(self.record.contact, kABPersonEmailProperty);
+        NSString* email = (__bridge NSString*)ABMultiValueCopyValueAtIndex(emails, 0);
+        MFMailComposeViewController *mailCont = [[MFMailComposeViewController alloc] init];
+        
+        [mailCont setSubject:@"Ты мне кое-что должен :)"];
+        [mailCont setToRecipients:[NSArray arrayWithObject:email]];
+        [mailCont setMessageBody:@"Привет, когда вернешь ?" isHTML:NO];
+        
+        mailCont.mailComposeDelegate = self;
+        [self presentViewController:mailCont animated:YES completion:nil];
+    }
 }
 
 - (IBAction)smsClicked:(id)sender {
+    if([MFMessageComposeViewController canSendText])
+    {
+        MFMessageComposeViewController *controller = [[MFMessageComposeViewController alloc] init];
+        NSString *number = (__bridge_transfer NSString*)ABRecordCopyValue(self.record.contact, kABPersonPhoneProperty);
+        
+        controller.body = @"Привет, когда вернешь ?";
+        controller.recipients = [NSArray arrayWithObject:[NSString stringWithFormat:@"tel:%@", number]];
+        
+        controller.messageComposeDelegate = self;
+        [self presentViewController:controller animated:YES completion:nil];
+    }
+}
+
+// DELEGATE METHODS
+
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)mailComposeController:(MFMailComposeViewController*)controller
+          didFinishWithResult:(MFMailComposeResult)result
+                        error:(NSError*)error
+{
+    if(error) NSLog(@"ERROR - mailComposeController: %@", [error localizedDescription]);
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

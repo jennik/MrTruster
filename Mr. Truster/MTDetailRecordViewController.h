@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <AddressBookUI/AddressBookUI.h>
 #import "MTRecord.h"
+#import <MessageUI/MFMessageComposeViewController.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
-@interface MTDetailRecordViewController : UIViewController
+@interface MTDetailRecordViewController : UIViewController <MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *itemPhotoField;
 @property (weak, nonatomic) IBOutlet UIImageView *debitorPhotoField;
 @property (weak, nonatomic) IBOutlet UITextField *contactField;
