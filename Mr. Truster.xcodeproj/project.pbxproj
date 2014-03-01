@@ -45,6 +45,8 @@
 		09E25E5C18C22114001CEFB1 /* item_img3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09E25E5218C22114001CEFB1 /* item_img3.jpg */; };
 		09E25E5D18C22114001CEFB1 /* item_img4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09E25E5318C22114001CEFB1 /* item_img4.jpg */; };
 		09E25E5E18C22114001CEFB1 /* item_img5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09E25E5418C22114001CEFB1 /* item_img5.jpg */; };
+		09E25E6018C223A1001CEFB1 /* MTDetailRecordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09E25E5F18C223A1001CEFB1 /* MTDetailRecordView.xib */; };
+		09E25E6318C2279E001CEFB1 /* MTDetailRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E25E6218C2279E001CEFB1 /* MTDetailRecordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,9 @@
 		09E25E5218C22114001CEFB1 /* item_img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = item_img3.jpg; sourceTree = "<group>"; };
 		09E25E5318C22114001CEFB1 /* item_img4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = item_img4.jpg; sourceTree = "<group>"; };
 		09E25E5418C22114001CEFB1 /* item_img5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = item_img5.jpg; sourceTree = "<group>"; };
+		09E25E5F18C223A1001CEFB1 /* MTDetailRecordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTDetailRecordView.xib; sourceTree = "<group>"; };
+		09E25E6118C2279E001CEFB1 /* MTDetailRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDetailRecordViewController.h; sourceTree = "<group>"; };
+		09E25E6218C2279E001CEFB1 /* MTDetailRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDetailRecordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +183,9 @@
 		0412A24718C1F13500C07FD0 /* Mr. Truster */ = {
 			isa = PBXGroup;
 			children = (
+				09E25E6118C2279E001CEFB1 /* MTDetailRecordViewController.h */,
+				09E25E6218C2279E001CEFB1 /* MTDetailRecordViewController.m */,
+				09E25E5F18C223A1001CEFB1 /* MTDetailRecordView.xib */,
 				0412A29918C1F53900C07FD0 /* MTRecord.h */,
 				0412A29A18C1F53900C07FD0 /* MTRecord.m */,
 				0412A25018C1F13500C07FD0 /* MTAppDelegate.h */,
@@ -355,6 +363,7 @@
 				0412A2A018C2127E00C07FD0 /* MTAddViewController.xib in Resources */,
 				09E25E5718C22114001CEFB1 /* deb_img3.jpg in Resources */,
 				09E25E5A18C22114001CEFB1 /* item_img1.jpg in Resources */,
+				09E25E6018C223A1001CEFB1 /* MTDetailRecordView.xib in Resources */,
 				0412A24C18C1F13500C07FD0 /* InfoPlist.strings in Resources */,
 				09E25E5618C22114001CEFB1 /* deb_img2.jpg in Resources */,
 				09E25E5818C22114001CEFB1 /* deb_img4.jpg in Resources */,
@@ -391,6 +400,7 @@
 				0412A29018C1F1BC00C07FD0 /* AQGridViewUpdateItem.m in Sources */,
 				0412A29F18C2127E00C07FD0 /* MTAddViewController.m in Sources */,
 				0412A29218C1F1BC00C07FD0 /* NSIndexSet+AQIsSetContiguous.m in Sources */,
+				09E25E6318C2279E001CEFB1 /* MTDetailRecordViewController.m in Sources */,
 				0412A28C18C1F1BC00C07FD0 /* AQGridViewCell.m in Sources */,
 				0412A28D18C1F1BC00C07FD0 /* AQGridViewController.m in Sources */,
 				0412A25218C1F13500C07FD0 /* MTAppDelegate.m in Sources */,

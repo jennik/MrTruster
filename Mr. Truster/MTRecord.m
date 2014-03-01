@@ -19,7 +19,7 @@
     self.contact = aContact;
     self.dateCreated = [NSDate date];
     
-    return nil;
+    return self;
 }
 
 @end
