@@ -6,6 +6,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MTMainViewController">
             <connections>
+                <outlet property="borrow" destination="2XV-hr-GNy" id="XHr-ng-hKR"/>
+                <outlet property="lend" destination="XOK-L0-9RL" id="kY2-gi-V5V"/>
+                <outlet property="table" destination="8VL-Nm-isj" id="S5a-0I-wbB"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -19,6 +22,10 @@
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JpP-vI-L4x"/>
+                        <outlet property="delegate" destination="-1" id="3DA-fL-nWC"/>
+                    </connections>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2XV-hr-GNy">
                     <rect key="frame" x="0.0" y="72" width="160" height="30"/>
