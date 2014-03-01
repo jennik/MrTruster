@@ -42,7 +42,9 @@
     }
     
     if (self.record.contact) {
-        self.contactField.text = @"TEXT";
+        NSString* name = (__bridge_transfer NSString*)ABRecordCopyValue(self.record.contact, kABPersonFirstNameProperty);
+        NSString *lastname = (__bridge_transfer NSString*)ABRecordCopyValue(self.record.contact, kABPersonLastNameProperty);
+        self.contactField.text = [NSString stringWithFormat:@"%@ %@", name, lastname];
     }
     
     if (self.record.dateBack) {
@@ -70,5 +72,16 @@
 }
 
 - (IBAction)contactsClicked:(id)sender {
+}
+
+- (IBAction)callClicked:(id)sender {
+    NSString *number = (__bridge_transfer NSString*)ABRecordCopyValue(self.record.contact, kABPersonPhoneProperty);
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@", number]]];
+}
+
+- (IBAction)emailClicked:(id)sender {
+}
+
+- (IBAction)smsClicked:(id)sender {
 }
 @end

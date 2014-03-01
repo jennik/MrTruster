@@ -26,7 +26,12 @@
         // Custom initialization
 
         NSDate *date = [NSDate date];
-        ABAddressBookRef addressBook = ABAddressBookCreate();
+        
+        
+        CFErrorRef err;
+        ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, &err);
+        ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
+        });
         CFArrayRef allPeople = ABAddressBookCopyArrayOfAllPeople(addressBook);
         ABRecordRef ref = CFArrayGetValueAtIndex(allPeople, 1);
         
