@@ -16,7 +16,12 @@
     
     CGContextAddArc(ctx, rect.origin.x + rect.size.width / 2, rect.origin.y + rect.size.height / 2, rect.size.height / 2, 0, 2 * M_PI, YES);
     
-    CGContextDrawPath(ctx, kCGPathFill);
+    
+    CGContextClip(ctx);
+    
+    [self.photo drawInRect:rect];
+    
 }
+
 
 @end

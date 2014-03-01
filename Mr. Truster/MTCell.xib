@@ -49,7 +49,7 @@
                 <outlet property="backed" destination="S4u-NZ-hv3" id="eoq-5z-WOA"/>
                 <outlet property="what" destination="nJD-ie-HDi" id="n6h-0q-fbD"/>
                 <outlet property="when" destination="zov-1f-WD2" id="fGp-Hs-nzl"/>
-                <outlet property="who" destination="b7l-y4-xDN" id="nOB-U3-Nha"/>
+                <outlet property="who" destination="b7l-y4-xDN" id="Qj4-H4-4Md"/>
             </connections>
         </tableViewCell>
     </objects>

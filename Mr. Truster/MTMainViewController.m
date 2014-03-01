@@ -77,8 +77,23 @@
 {
     MTCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MTCell"];
     NSInteger index = indexPath.row;
+    MTRecord *record = [self.records objectAtIndex:index];
     
-    cell.what.image = [[self.records objectAtIndex:index] debitorPhoto];
+    cell.what.image = [record debitorPhoto];
+    cell.who.photo = record.itemPhoto;
+    
+    
+    
+    if ([[NSDate date] compare:record.dateBack] == NSOrderedDescending)
+    {
+        cell.when.text = @"Просрочен";
+        cell.when.textColor = [UIColor redColor];
+    }
+    else
+    {
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        cell.when.textColor = [UIColor greenColor];
+    }
     
     return cell;
 }

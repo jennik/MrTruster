@@ -10,6 +10,6 @@
 
 @interface MTCircleView : UIView
 
-@property (nonatomic) UIImageView *imageView;
+@property (nonatomic) UIImage *photo;
 
 @end
