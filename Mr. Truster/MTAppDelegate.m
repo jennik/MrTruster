@@ -7,13 +7,26 @@
 //
 
 #import "MTAppDelegate.h"
+#import "MTMainViewController.h"
 
 @implementation MTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:[[MTMainViewController alloc] init]];
+    
+    
+    UIColor *barColour = [UIColor colorWithRed:0.45f green:0.46f blue:0.58f alpha:1.00f];
+    UIView *colourView = [[UIView alloc] initWithFrame:CGRectMake(0.f, -20.f, 320.f, 64.f)];
+    colourView.opaque = NO;
+    colourView.alpha = 1.0f;
+    colourView.backgroundColor = barColour;
+    navController.navigationBar.barTintColor = barColour;
+    [navController.navigationBar.layer insertSublayer:colourView.layer atIndex:1];
+    
+    self.window.rootViewController = navController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
