@@ -29,17 +29,17 @@
         CFArrayRef allPeople = ABAddressBookCopyArrayOfAllPeople(addressBook);
         ABRecordRef ref = CFArrayGetValueAtIndex(allPeople, 1);
         
-        UIImage *item_img1 = [UIImage imageNamed:@"item_img1"];
-        UIImage *item_img2 = [UIImage imageNamed:@"item_img2"];
-        UIImage *item_img3 = [UIImage imageNamed:@"item_img3"];
-        UIImage *item_img4 = [UIImage imageNamed:@"item_img4"];
-        UIImage *item_img5 = [UIImage imageNamed:@"item_img5"];
+        UIImage *item_img1 = [UIImage imageNamed:@"item_img1.jpg"];
+        UIImage *item_img2 = [UIImage imageNamed:@"item_img2.jpg"];
+        UIImage *item_img3 = [UIImage imageNamed:@"item_img3.jpg"];
+        UIImage *item_img4 = [UIImage imageNamed:@"item_img4.jpg"];
+        UIImage *item_img5 = [UIImage imageNamed:@"item_img5.jpg"];
         
-        UIImage *deb_img1 = [UIImage imageNamed:@"deb_img1"];
-        UIImage *deb_img2 = [UIImage imageNamed:@"deb_img2"];
-        UIImage *deb_img3 = [UIImage imageNamed:@"deb_img3"];
-        UIImage *deb_img4 = [UIImage imageNamed:@"deb_img4"];
-        UIImage *deb_img5 = [UIImage imageNamed:@"deb_img5"];
+        UIImage *deb_img1 = [UIImage imageNamed:@"deb_img1.jpg"];
+        UIImage *deb_img2 = [UIImage imageNamed:@"deb_img2.jpg"];
+        UIImage *deb_img3 = [UIImage imageNamed:@"deb_img3.jpg"];
+        UIImage *deb_img4 = [UIImage imageNamed:@"deb_img4.jpg"];
+        UIImage *deb_img5 = [UIImage imageNamed:@"deb_img5.jpg"];
         
         MTRecord *item1 = [[MTRecord alloc] initWithDateBack:date debitorPhoto:deb_img1 itemPhoto:item_img1 comment:@"Plz giv ma stuff" contact:ref];
         MTRecord *item2 = [[MTRecord alloc] initWithDateBack:date debitorPhoto:deb_img2 itemPhoto:item_img2 comment:@"Plz giv ma stuff" contact:ref];
@@ -48,6 +48,8 @@
         MTRecord *item5 = [[MTRecord alloc] initWithDateBack:date debitorPhoto:deb_img5 itemPhoto:item_img5 comment:@"Plz giv ma stuff" contact:ref];
         
         records = [NSMutableArray arrayWithObjects:item1, item2, item3, item4, item5, nil];
+        
+        NSLog(@"%@", item1.itemPhoto);
         
     }
     return self;
@@ -77,7 +79,7 @@
     MTCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MTCell"];
     NSInteger index = indexPath.row;
     
-    cell.what.image = [[self.records objectAtIndex:index] itemPhoto];
+    cell.what.image = [[self.records objectAtIndex:index] debitorPhoto];
     
     return cell;
 }
@@ -85,6 +87,11 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 90.0f;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
 }
 
 @end
