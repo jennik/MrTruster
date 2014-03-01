@@ -75,10 +75,16 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MTCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MTCell"];
+    NSInteger index = indexPath.row;
     
-    //add smth
+    cell.what.image = [[self.records objectAtIndex:index] itemPhoto];
     
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 90.0f;
 }
 
 @end
