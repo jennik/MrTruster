@@ -10,13 +10,4 @@
 
 @implementation MTCell
 
-- (id)init
-{
-    if (self = [super init])
-    {
-        [[NSBundle mainBundle] loadNibNamed:@"Cell" owner:self options:nil];
-    }
-    return self;
-}
-
 @end
