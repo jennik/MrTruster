@@ -9,6 +9,7 @@
 #import "MTMainViewController.h"
 #import "MTRecord.h"
 #import "MTCell.h"
+#include "MTDetailRecordViewController.h"
 
 @interface MTMainViewController ()
 
@@ -48,8 +49,6 @@
         MTRecord *item5 = [[MTRecord alloc] initWithDateBack:date debitorPhoto:deb_img5 itemPhoto:item_img5 comment:@"Plz giv ma stuff" contact:ref];
         
         records = [NSMutableArray arrayWithObjects:item1, item2, item3, item4, item5, nil];
-        
-        NSLog(@"%@", item1.itemPhoto);
         
     }
     return self;
@@ -91,7 +90,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    MTDetailRecordViewController *detailView = [[MTDetailRecordViewController alloc] init];
+    detailView.record = [self.records objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:detailView animated:YES];
 }
 
 @end
