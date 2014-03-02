@@ -12,7 +12,7 @@
 #import <MessageUI/MFMessageComposeViewController.h>
 #import <MessageUI/MFMailComposeViewController.h>
 
-@interface MTDetailRecordViewController : UIViewController <MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate>
+@interface MTDetailRecordViewController : UIViewController <MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate, UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *itemPhotoField;
 @property (weak, nonatomic) IBOutlet UIImageView *debitorPhotoField;
 @property (weak, nonatomic) IBOutlet UITextField *contactField;
@@ -20,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UITextView *commentField;
 @property (weak, nonatomic) IBOutlet UITextField *createDateField;
 @property (nonatomic) MTRecord *record;
+@property (weak, nonatomic) IBOutlet UIImageView *image;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollview;
 
 - (IBAction)returnedClicked:(id)sender;
 - (IBAction)okClicked:(id)sender;

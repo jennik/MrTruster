@@ -54,6 +54,7 @@
 		0925307818C3263E00184A3F /* thing_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 0925306F18C3263E00184A3F /* thing_empty.png */; };
 		0925307918C3263E00184A3F /* thing_remake.png in Resources */ = {isa = PBXBuildFile; fileRef = 0925307018C3263E00184A3F /* thing_remake.png */; };
 		0925307A18C3263E00184A3F /* thing_v_make.png in Resources */ = {isa = PBXBuildFile; fileRef = 0925307118C3263E00184A3F /* thing_v_make.png */; };
+		0925307C18C354D900184A3F /* mrt_detail_view_demo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0925307B18C354D900184A3F /* mrt_detail_view_demo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,7 @@
 		0925306F18C3263E00184A3F /* thing_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thing_empty.png; sourceTree = "<group>"; };
 		0925307018C3263E00184A3F /* thing_remake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thing_remake.png; sourceTree = "<group>"; };
 		0925307118C3263E00184A3F /* thing_v_make.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thing_v_make.png; sourceTree = "<group>"; };
+		0925307B18C354D900184A3F /* mrt_detail_view_demo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mrt_detail_view_demo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				0925306918C3263E00184A3F /* man_empty.png */,
+				0925307B18C354D900184A3F /* mrt_detail_view_demo.jpg */,
 				0925306A18C3263E00184A3F /* mans_d_make.png */,
 				0925306B18C3263E00184A3F /* mans_remake.png */,
 				0925306C18C3263E00184A3F /* mans_v_make.png */,
@@ -368,6 +371,7 @@
 				0412A2B818C242AB00C07FD0 /* item_img1.jpg in Resources */,
 				0412A2C018C2450F00C07FD0 /* MTDetailRecordView.xib in Resources */,
 				0412A2B918C242AB00C07FD0 /* item_img2.jpg in Resources */,
+				0925307C18C354D900184A3F /* mrt_detail_view_demo.jpg in Resources */,
 				0925307318C3263E00184A3F /* mans_d_make.png in Resources */,
 				0925307718C3263E00184A3F /* thing_d_make.png in Resources */,
 				0412A2A018C2127E00C07FD0 /* MTAddViewController.xib in Resources */,

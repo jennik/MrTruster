@@ -28,32 +28,36 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"%@", self.record.comment);
-	// Do any additional setup after loading the view.
+    self.scrollview.contentSize = CGSizeMake(340, 800);
+//    self.image.image = [UIImage imageNamed:@"mrt_detail_view_demo.jpg"];
     
-    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"MM dd"];
-    
-    self.createDateField.text = [formatter stringFromDate:self.record.dateCreated];
-    self.itemPhotoField.image = record.itemPhoto;
-    
-    if (self.record.debitorPhoto) {
-        self.debitorPhotoField.image = self.record.debitorPhoto;
-    }
-    
-    if (self.record.contact) {
-        NSString* name = (__bridge_transfer NSString*)ABRecordCopyValue(self.record.contact, kABPersonFirstNameProperty);
-        NSString *lastname = (__bridge_transfer NSString*)ABRecordCopyValue(self.record.contact, kABPersonLastNameProperty);
-        self.contactField.text = [NSString stringWithFormat:@"%@ %@", name, lastname];
-    }
-    
-    if (self.record.dateBack) {
-        self.dateBackField.text = [formatter stringFromDate:self.record.dateBack];
-    }
-    
-    if (self.record.comment) {
-        self.commentField.text = self.record.comment;
-    }
+
+//    NSLog(@"%@", self.record.comment);
+//	// Do any additional setup after loading the view.
+//    
+//    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+//    [formatter setDateFormat:@"MM dd"];
+//    
+//    self.createDateField.text = [formatter stringFromDate:self.record.dateCreated];
+//    self.itemPhotoField.image = record.itemPhoto;
+//    
+//    if (self.record.debitorPhoto) {
+//        self.debitorPhotoField.image = self.record.debitorPhoto;
+//    }
+//    
+//    if (self.record.contact) {
+//        NSString* name = (__bridge_transfer NSString*)ABRecordCopyValue(self.record.contact, kABPersonFirstNameProperty);
+//        NSString *lastname = (__bridge_transfer NSString*)ABRecordCopyValue(self.record.contact, kABPersonLastNameProperty);
+//        self.contactField.text = [NSString stringWithFormat:@"%@ %@", name, lastname];
+//    }
+//    
+//    if (self.record.dateBack) {
+//        self.dateBackField.text = [formatter stringFromDate:self.record.dateBack];
+//    }
+//    
+//    if (self.record.comment) {
+//        self.commentField.text = self.record.comment;
+//    }
 }
 
 - (void)didReceiveMemoryWarning
