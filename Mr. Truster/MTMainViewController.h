@@ -10,11 +10,10 @@
 
 @interface MTMainViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic) NSMutableArray *irecords;
+@property (nonatomic) BOOL whom;
 @property (nonatomic) NSMutableArray *records;
 
-@property (weak, nonatomic) IBOutlet UIButton *borrow;
-@property (weak, nonatomic) IBOutlet UIButton *lend;
 @property (weak, nonatomic) IBOutlet UITableView *table;
+- (IBAction)take:(id)sender;
 
 @end
