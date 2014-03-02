@@ -28,13 +28,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        
-        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Device has no camera" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-        
-        [myAlertView show];
-        
-    }
+    self.debitorPhotoField.photo = [UIImage imageNamed:@"man_empty.png"];
+    self.itemPhotoField.image = [UIImage imageNamed:@"thing_empty.png"];
+    self.debitorPictogram.image = [UIImage imageNamed:@"mans_remake.png"];
+    self.itemPictogram.image = [UIImage imageNamed:@"thing_remake.png"];
+    
+    self.debitorPhotoField.backgroundColor = [UIColor clearColor];
+    
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"d MMM"];
+    NSDate *currentDate = [NSDate date];
+    
+    self.currentDateField.text = [formatter stringFromDate:currentDate];
+    
+    [formatter setDateFormat:@"EEE | H:m"];
+    self.currentTimeDayField.text = [formatter stringFromDate:currentDate];
+    
     self.record = [[MTRecord alloc] init];
     // Do any additional setup after loading the view from its nib.
 }
@@ -46,25 +55,43 @@
 }
 
 - (IBAction)itemPhotoClicked:(id)sender {
-    self.setItemPhoto = YES;
     
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-    picker.delegate = self;
-    picker.allowsEditing = YES;
-    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-    
-    [self presentViewController:picker animated:YES completion:NULL];
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        
+        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Device has no camera" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        
+        [myAlertView show];
+        
+    } else {
+        self.setItemPhoto = YES;
+        
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.delegate = self;
+        picker.allowsEditing = YES;
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        
+        [self presentViewController:picker animated:YES completion:NULL];
+    }
 }
 
 - (IBAction)debitorPhotoClicked:(id)sender {
-    self.setDebitorPhoto = YES;
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        
+        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Device has no camera" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        
+        [myAlertView show];
+        
+    } else {
+        self.setDebitorPhoto = YES;
+        
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.delegate = self;
+        picker.allowsEditing = YES;
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        
+        [self presentViewController:picker animated:YES completion:NULL];
+    }
     
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-    picker.delegate = self;
-    picker.allowsEditing = YES;
-    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-    
-    [self presentViewController:picker animated:YES completion:NULL];
 }
 
 - (IBAction)giveClicked:(id)sender {

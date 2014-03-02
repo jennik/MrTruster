@@ -45,6 +45,15 @@
 		0925306218C31F2400184A3F /* vkl_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 0925306118C31F2400184A3F /* vkl_back.png */; };
 		0925306618C31F7800184A3F /* MTHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0925306418C31F7800184A3F /* MTHeaderCell.m */; };
 		0925306718C31F7800184A3F /* MTHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0925306518C31F7800184A3F /* MTHeaderCell.xib */; };
+		0925307218C3263E00184A3F /* man_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 0925306918C3263E00184A3F /* man_empty.png */; };
+		0925307318C3263E00184A3F /* mans_d_make.png in Resources */ = {isa = PBXBuildFile; fileRef = 0925306A18C3263E00184A3F /* mans_d_make.png */; };
+		0925307418C3263E00184A3F /* mans_remake.png in Resources */ = {isa = PBXBuildFile; fileRef = 0925306B18C3263E00184A3F /* mans_remake.png */; };
+		0925307518C3263E00184A3F /* mans_v_make.png in Resources */ = {isa = PBXBuildFile; fileRef = 0925306C18C3263E00184A3F /* mans_v_make.png */; };
+		0925307618C3263E00184A3F /* nav_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 0925306D18C3263E00184A3F /* nav_back.png */; };
+		0925307718C3263E00184A3F /* thing_d_make.png in Resources */ = {isa = PBXBuildFile; fileRef = 0925306E18C3263E00184A3F /* thing_d_make.png */; };
+		0925307818C3263E00184A3F /* thing_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 0925306F18C3263E00184A3F /* thing_empty.png */; };
+		0925307918C3263E00184A3F /* thing_remake.png in Resources */ = {isa = PBXBuildFile; fileRef = 0925307018C3263E00184A3F /* thing_remake.png */; };
+		0925307A18C3263E00184A3F /* thing_v_make.png in Resources */ = {isa = PBXBuildFile; fileRef = 0925307118C3263E00184A3F /* thing_v_make.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +117,15 @@
 		0925306318C31F7800184A3F /* MTHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTHeaderCell.h; sourceTree = "<group>"; };
 		0925306418C31F7800184A3F /* MTHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTHeaderCell.m; sourceTree = "<group>"; };
 		0925306518C31F7800184A3F /* MTHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTHeaderCell.xib; sourceTree = "<group>"; };
+		0925306918C3263E00184A3F /* man_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = man_empty.png; sourceTree = "<group>"; };
+		0925306A18C3263E00184A3F /* mans_d_make.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mans_d_make.png; sourceTree = "<group>"; };
+		0925306B18C3263E00184A3F /* mans_remake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mans_remake.png; sourceTree = "<group>"; };
+		0925306C18C3263E00184A3F /* mans_v_make.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mans_v_make.png; sourceTree = "<group>"; };
+		0925306D18C3263E00184A3F /* nav_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_back.png; sourceTree = "<group>"; };
+		0925306E18C3263E00184A3F /* thing_d_make.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thing_d_make.png; sourceTree = "<group>"; };
+		0925306F18C3263E00184A3F /* thing_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thing_empty.png; sourceTree = "<group>"; };
+		0925307018C3263E00184A3F /* thing_remake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thing_remake.png; sourceTree = "<group>"; };
+		0925307118C3263E00184A3F /* thing_v_make.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thing_v_make.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,9 +247,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0925306818C3263E00184A3F /* src_make */ = {
+			isa = PBXGroup;
+			children = (
+				0925306918C3263E00184A3F /* man_empty.png */,
+				0925306A18C3263E00184A3F /* mans_d_make.png */,
+				0925306B18C3263E00184A3F /* mans_remake.png */,
+				0925306C18C3263E00184A3F /* mans_v_make.png */,
+				0925306D18C3263E00184A3F /* nav_back.png */,
+				0925306E18C3263E00184A3F /* thing_d_make.png */,
+				0925306F18C3263E00184A3F /* thing_empty.png */,
+				0925307018C3263E00184A3F /* thing_remake.png */,
+				0925307118C3263E00184A3F /* thing_v_make.png */,
+			);
+			path = src_make;
+			sourceTree = "<group>";
+		};
 		09E25E4018C22008001CEFB1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0925306818C3263E00184A3F /* src_make */,
 				0925306118C31F2400184A3F /* vkl_back.png */,
 				0412A2A918C242AB00C07FD0 /* deb_img1.jpg */,
 				0412A2AA18C242AB00C07FD0 /* deb_img2.jpg */,
@@ -325,20 +360,29 @@
 			files = (
 				0412A2B418C242AB00C07FD0 /* deb_img2.jpg in Resources */,
 				0412A29818C1F21100C07FD0 /* MTMainViewController.xib in Resources */,
+				0925307818C3263E00184A3F /* thing_empty.png in Resources */,
+				0925307218C3263E00184A3F /* man_empty.png in Resources */,
 				0412A2B318C242AB00C07FD0 /* deb_img1.jpg in Resources */,
+				0925307618C3263E00184A3F /* nav_back.png in Resources */,
 				0412A2A218C2136C00C07FD0 /* MTCell.xib in Resources */,
 				0412A2B818C242AB00C07FD0 /* item_img1.jpg in Resources */,
 				0412A2C018C2450F00C07FD0 /* MTDetailRecordView.xib in Resources */,
 				0412A2B918C242AB00C07FD0 /* item_img2.jpg in Resources */,
+				0925307318C3263E00184A3F /* mans_d_make.png in Resources */,
+				0925307718C3263E00184A3F /* thing_d_make.png in Resources */,
 				0412A2A018C2127E00C07FD0 /* MTAddViewController.xib in Resources */,
+				0925307518C3263E00184A3F /* mans_v_make.png in Resources */,
 				0925306218C31F2400184A3F /* vkl_back.png in Resources */,
+				0925307A18C3263E00184A3F /* thing_v_make.png in Resources */,
 				0412A2BA18C242AB00C07FD0 /* item_img3.jpg in Resources */,
 				0412A2B718C242AB00C07FD0 /* deb_img5.jpg in Resources */,
 				0412A2B518C242AB00C07FD0 /* deb_img3.jpg in Resources */,
 				0925306018C30CB400184A3F /* MTAddMainViewController.xib in Resources */,
+				0925307418C3263E00184A3F /* mans_remake.png in Resources */,
 				0412A24C18C1F13500C07FD0 /* InfoPlist.strings in Resources */,
 				0412A2BC18C242AB00C07FD0 /* item_img5.jpg in Resources */,
 				0412A2B618C242AB00C07FD0 /* deb_img4.jpg in Resources */,
+				0925307918C3263E00184A3F /* thing_remake.png in Resources */,
 				0925306718C31F7800184A3F /* MTHeaderCell.xib in Resources */,
 				0412A25418C1F13500C07FD0 /* Images.xcassets in Resources */,
 				0412A2BB18C242AB00C07FD0 /* item_img4.jpg in Resources */,

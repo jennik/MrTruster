@@ -11,7 +11,7 @@
 #import "MTCell.h"
 #include "MTDetailRecordViewController.h"
 #import "MTHeaderCell.h"
-#import "MTAddViewController.h"
+#import "MTAddMainViewController.h"
 
 @interface MTMainViewController ()
 
@@ -178,7 +178,7 @@
 
 - (IBAction)take:(id)sender
 {
-    MTAddViewController *addView = [[MTAddViewController alloc] init];
+    MTAddMainViewController *addView = [[MTAddMainViewController alloc] init];
     
     [self.navigationController pushViewController:addView animated:YES];
 }
