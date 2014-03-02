@@ -179,7 +179,8 @@
 - (IBAction)take:(id)sender
 {
     MTAddMainViewController *addView = [[MTAddMainViewController alloc] init];
-    
+    addView.parent = self;
     [self.navigationController pushViewController:addView animated:YES];
+    
 }
 @end

@@ -209,11 +209,11 @@
 				0412A2A118C2136C00C07FD0 /* MTCell.xib */,
 				0412A2A318C216AA00C07FD0 /* MTCircleView.h */,
 				0412A2A418C216AA00C07FD0 /* MTCircleView.m */,
-				0412A25318C1F13500C07FD0 /* Images.xcassets */,
-				0412A24818C1F13500C07FD0 /* Supporting Files */,
 				0925305C18C30CB400184A3F /* MTAddMainViewController.h */,
 				0925305D18C30CB400184A3F /* MTAddMainViewController.m */,
 				0925305E18C30CB400184A3F /* MTAddMainViewController.xib */,
+				0412A25318C1F13500C07FD0 /* Images.xcassets */,
+				0412A24818C1F13500C07FD0 /* Supporting Files */,
 			);
 			path = "Mr. Truster";
 			sourceTree = "<group>";

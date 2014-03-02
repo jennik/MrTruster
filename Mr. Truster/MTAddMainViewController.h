@@ -15,12 +15,13 @@
 @property (nonatomic) MTRecord* record;
 @property (nonatomic) BOOL setDebitorPhoto;
 @property (nonatomic) BOOL setItemPhoto;
-@property (weak, nonatomic) IBOutlet UIImageView *itemPhotoField;
-@property (weak, nonatomic) IBOutlet MTCircleView *debitorPhotoField;
+@property (strong, nonatomic) IBOutlet UIImageView *itemPhotoField;
+@property (strong, nonatomic) IBOutlet MTCircleView *debitorPhotoField;
 @property (weak, nonatomic) IBOutlet UILabel *currentDateField;
 @property (weak, nonatomic) IBOutlet UILabel *currentTimeDayField;
 @property (weak, nonatomic) IBOutlet UIImageView *debitorPictogram;
 @property (weak, nonatomic) IBOutlet UIImageView *itemPictogram;
+@property (weak, nonatomic) MTMainViewController *parent;
 
 - (IBAction)itemPhotoClicked:(id)sender;
 - (IBAction)debitorPhotoClicked:(id)sender;

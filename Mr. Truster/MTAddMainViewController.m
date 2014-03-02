@@ -95,11 +95,14 @@
 }
 
 - (IBAction)giveClicked:(id)sender {
-    MTMainViewController *cont = self.presentingViewController;
+    MTMainViewController *cont = self.parent;
+    NSLog(@"%@", cont.records);
     
     [cont.records addObject:record];
+    NSLog(@"%@", cont.records);
+    [cont.table reloadData];
     
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)detailClicked:(id)sender {
@@ -113,9 +116,12 @@
     if (self.setDebitorPhoto) {
         self.record.debitorPhoto = chosenImage;
         self.setDebitorPhoto = NO;
+        self.debitorPhotoField.photo = chosenImage;
+        [self.debitorPhotoField setNeedsDisplay];
     } else if (self.setItemPhoto) {
         self.record.itemPhoto = chosenImage;
         self.setItemPhoto = NO;
+        self.itemPhotoField.image = chosenImage;
     }
     
     [picker dismissViewControllerAnimated:YES completion:NULL];
