@@ -50,6 +50,8 @@
 		0412A2BC18C242AB00C07FD0 /* item_img5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0412A2B218C242AB00C07FD0 /* item_img5.jpg */; };
 		0412A2C018C2450F00C07FD0 /* MTDetailRecordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0412A2BD18C2450F00C07FD0 /* MTDetailRecordView.xib */; };
 		0412A2C118C2450F00C07FD0 /* MTDetailRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0412A2BF18C2450F00C07FD0 /* MTDetailRecordViewController.m */; };
+		0925305F18C30CB400184A3F /* MTAddMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0925305D18C30CB400184A3F /* MTAddMainViewController.m */; };
+		0925306018C30CB400184A3F /* MTAddMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0925305E18C30CB400184A3F /* MTAddMainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +131,9 @@
 		0412A2BD18C2450F00C07FD0 /* MTDetailRecordView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTDetailRecordView.xib; sourceTree = "<group>"; };
 		0412A2BE18C2450F00C07FD0 /* MTDetailRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDetailRecordViewController.h; sourceTree = "<group>"; };
 		0412A2BF18C2450F00C07FD0 /* MTDetailRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDetailRecordViewController.m; sourceTree = "<group>"; };
+		0925305C18C30CB400184A3F /* MTAddMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTAddMainViewController.h; sourceTree = "<group>"; };
+		0925305D18C30CB400184A3F /* MTAddMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTAddMainViewController.m; sourceTree = "<group>"; };
+		0925305E18C30CB400184A3F /* MTAddMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTAddMainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +217,9 @@
 				0412A27218C1F1BC00C07FD0 /* AQGrid */,
 				0412A25318C1F13500C07FD0 /* Images.xcassets */,
 				0412A24818C1F13500C07FD0 /* Supporting Files */,
+				0925305C18C30CB400184A3F /* MTAddMainViewController.h */,
+				0925305D18C30CB400184A3F /* MTAddMainViewController.m */,
+				0925305E18C30CB400184A3F /* MTAddMainViewController.xib */,
 			);
 			path = "Mr. Truster";
 			sourceTree = "<group>";
@@ -380,6 +388,7 @@
 				0412A2BA18C242AB00C07FD0 /* item_img3.jpg in Resources */,
 				0412A2B718C242AB00C07FD0 /* deb_img5.jpg in Resources */,
 				0412A2B518C242AB00C07FD0 /* deb_img3.jpg in Resources */,
+				0925306018C30CB400184A3F /* MTAddMainViewController.xib in Resources */,
 				0412A24C18C1F13500C07FD0 /* InfoPlist.strings in Resources */,
 				0412A2BC18C242AB00C07FD0 /* item_img5.jpg in Resources */,
 				0412A2B618C242AB00C07FD0 /* deb_img4.jpg in Resources */,
@@ -407,6 +416,7 @@
 				0412A2C118C2450F00C07FD0 /* MTDetailRecordViewController.m in Sources */,
 				0412A28A18C1F1BC00C07FD0 /* AQGridView.m in Sources */,
 				0412A28E18C1F1BC00C07FD0 /* AQGridViewData.m in Sources */,
+				0925305F18C30CB400184A3F /* MTAddMainViewController.m in Sources */,
 				0412A28F18C1F1BC00C07FD0 /* AQGridViewUpdateInfo.m in Sources */,
 				0412A29718C1F21100C07FD0 /* MTMainViewController.m in Sources */,
 				0412A29118C1F1BC00C07FD0 /* NSIndexSet+AQIndexesOutsideSet.m in Sources */,
